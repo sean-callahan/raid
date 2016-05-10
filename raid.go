@@ -61,7 +61,7 @@ func (l Level) TotalCapacity(capacity uint64, drives uint64) (uint64, error) {
 	}
 }
 
-// SpaceEfficiency computes the effeciency of the RAID level based on the
+// SpaceEfficiency computes the efficiency of the RAID level based on the
 // provided drives and their capacity.
 func (l Level) SpaceEfficiency(capacity uint64, drives uint64) (float64, error) {
 	if drives < levelMin[l] {
